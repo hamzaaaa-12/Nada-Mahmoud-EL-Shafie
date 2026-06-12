@@ -34,7 +34,7 @@
       <a href="#projects" class="hero-cta">View Projects</a>
     </div>
     <div class="hero-right">
-      <img src="assets/portfolio/livingroom/4.png" alt="Living Room with decorative wall baskets">
+      <img src="assets/portfolio/livingroom/4.png" alt="Living Room with decorative wall baskets" loading="eager">
     </div>
     <div class="hero-page-num">Page 01</div>
   </section>
@@ -88,7 +88,7 @@
       <div
         style="width:100%;height:100%;min-height:600px;background:linear-gradient(160deg,#B8C4CC,#8A9FAB,#6B7F8C);position:relative;">
         <div class="oval-frame">
-          <img src="assets/osoul/library/5.png" alt="Interior Design Concept Rendering">
+          <img src="assets/osoul/library/5.png" alt="Interior Design Concept Rendering" loading="lazy">
         </div>
       </div>
     </div>
@@ -123,8 +123,7 @@
     </div>
     <div class="toc-right" style="position: relative;">
       <img src="assets/osoul/library/1.png" alt="Projects Backdrop"
-        style="width:100%; height:100%; object-fit:cover; opacity:0.4;">
-      <!-- color palette swatches as in the original -->
+        style="width:100%; height:100%; object-fit:cover; opacity:0.4;" loading="lazy">
       <div style="position:absolute;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;">
         <div style="width:22px;height:50px;background:#F0E6D0;"></div>
         <div style="width:22px;height:50px;background:#C8B08A;"></div>
@@ -134,9 +133,12 @@
     </div>
   </section>
 
-  <!-- PROJECT 1: OSOUL -->
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECT 1: OSOUL
+  ═══════════════════════════════════════════════════════ -->
   <section id="osoul" class="project-section">
-    <!-- Intro slide -->
+
+    <!-- Intro panel -->
     <div style="display:grid;grid-template-columns:1fr 1fr;min-height:70vh;background:var(--cream);">
       <div
         style="background:var(--cream);display:flex;align-items:center;justify-content:center;padding:60px;position:relative;overflow:hidden;">
@@ -162,154 +164,180 @@
       </div>
     </div>
 
-    <!-- Gallery images: Banana Fiber's Fabrics Showroom -->
-    <div class="gallery-labeled" style="background:var(--cream-light);">
-      <div class="gallery-labeled-text">
+    <!-- ── Fabric Showroom Slideshow ── -->
+    <div class="slideshow-block">
+      <div class="slideshow-info">
         <div class="section-label">Osoul</div>
-        <h3
-          style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown-dark);margin-bottom:16px;">
-          Banana Fiber's<br>Fabrics Showroom</h3>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">A concept showroom celebrating sustainable
-          banana fiber fabrics, where organic forms and earthy tones create an immersive retail journey.</p>
+        <h3 class="slideshow-sub-title">Banana Fiber's Fabrics Showroom</h3>
+        <p class="slideshow-desc">A concept showroom celebrating sustainable banana fiber fabrics, where organic forms
+          and earthy tones create an immersive retail journey.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
       </div>
-      <div class="gallery-labeled-img" style="min-height:500px;">
-        <img src="assets/osoul/fabric-showroom/1.png" alt="Fabrics Showroom View 1">
-      </div>
-    </div>
-
-    <!-- Full render views -->
-    <div class="gallery-one">
-      <img src="assets/osoul/fabric-showroom/2.png" alt="Fabrics Showroom Full View">
-    </div>
-
-    <div class="gallery-split" style="height:60vh;">
-      <img src="assets/osoul/fabric-showroom/3.png" alt="Fabrics Showroom Detail 1">
-      <img src="assets/osoul/fabric-showroom/4.png" alt="Fabrics Showroom Detail 2">
-    </div>
-    <div class="gallery-split" style="height:60vh; margin-top: 30px;">
-      <img src="assets/osoul/fabric-showroom/5.png" alt="Fabrics Showroom Detail 3">
-      <img src="assets/osoul/fabric-showroom/6.png" alt="Fabrics Showroom Detail 4">
-    </div>
-
-    <!-- Sewing Workshop -->
-    <div class="circle-display" style="background:var(--cream-light);">
-      <div class="circle-side">
-        <div class="circle-side-bg"></div>
-        <div class="circle-img-wrap">
-          <img src="assets/osoul/sewing-workshop/1.png" alt="Sewing Workshop Render">
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/osoul/fabric-showroom/1.png" alt="Fabrics Showroom View 1"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/fabric-showroom/2.png" alt="Fabrics Showroom Full View"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/fabric-showroom/3.png" alt="Fabrics Showroom Detail 1"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/fabric-showroom/4.png" alt="Fabrics Showroom Detail 2"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/fabric-showroom/5.png" alt="Fabrics Showroom Detail 3"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/fabric-showroom/6.png" alt="Fabrics Showroom Detail 4"
+              loading="lazy"></div>
         </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
-      <div class="circle-text">
-        <div class="section-label">Osoul</div>
-        <h3
-          style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:var(--brown-dark);margin-bottom:8px;">
-          Sewing Workshop</h3>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">A circular atelier where traditional craft
-          meets contemporary design — arched walls and organic details honour the artisans within.</p>
-      </div>
-    </div>
-    <div class="gallery-split" style="height:60vh;">
-      <img src="assets/osoul/sewing-workshop/2.png" alt="Sewing Workshop View 2">
-      <img src="assets/osoul/sewing-workshop/3.png" alt="Sewing Workshop View 3">
-    </div>
-    <div class="gallery-split" style="height:60vh; margin-top: 30px;">
-      <img src="assets/osoul/sewing-workshop/4.png" alt="Sewing Workshop View 4">
-      <img src="assets/osoul/sewing-workshop/5.png" alt="Sewing Workshop View 5">
     </div>
 
-    <!-- Graduation Library -->
-    <div class="gallery-labeled" style="background:var(--cream-light);">
-      <div class="gallery-labeled-text">
+    <!-- ── Sewing Workshop Slideshow ── -->
+    <div class="slideshow-block slideshow-block--reverse" style="background:var(--cream);">
+      <div class="slideshow-info">
         <div class="section-label">Osoul</div>
-        <h3
-          style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown-dark);margin-bottom:16px;">
-          Graduation Library</h3>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">A serene and structured library interior,
-          combining geometric wooden shelving with soft ambient lighting for study and research.</p>
+        <h3 class="slideshow-sub-title">Sewing Workshop</h3>
+        <p class="slideshow-desc">A circular atelier where traditional craft meets contemporary design — arched walls
+          and organic details honour the artisans within.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
       </div>
-      <div class="gallery-labeled-img" style="min-height:500px;">
-        <img src="assets/osoul/library/1.png" alt="Graduation Library View 1">
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/osoul/sewing-workshop/1.png" alt="Sewing Workshop Render"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/sewing-workshop/2.png" alt="Sewing Workshop View 2" loading="lazy">
+          </div>
+          <div class="slide"><img src="assets/osoul/sewing-workshop/3.png" alt="Sewing Workshop View 3" loading="lazy">
+          </div>
+          <div class="slide"><img src="assets/osoul/sewing-workshop/4.png" alt="Sewing Workshop View 4" loading="lazy">
+          </div>
+          <div class="slide"><img src="assets/osoul/sewing-workshop/5.png" alt="Sewing Workshop View 5" loading="lazy">
+          </div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
-    </div>
-    <div class="gallery-split" style="height:60vh;">
-      <img src="assets/osoul/library/2.png" alt="Graduation Library View 2">
-      <img src="assets/osoul/library/3.png" alt="Graduation Library View 3">
-    </div>
-    <div class="gallery-split" style="height:60vh; margin-top: 30px;">
-      <img src="assets/osoul/library/4.png" alt="Graduation Library View 4">
-      <img src="assets/osoul/library/5.png" alt="Graduation Library View 5">
-    </div>
-    <div class="gallery-one" style="height:65vh; margin-top: 30px;">
-      <img src="assets/osoul/library/6.png" alt="Graduation Library Full View">
     </div>
 
-    <!-- Restaurant render -->
-    <div class="gallery-labeled" style="background:var(--cream-light);">
-      <div class="gallery-labeled-img" style="min-height:500px;">
-        <img src="assets/osoul/restaurant/1.png" alt="Graduation Restaurant View 1">
-      </div>
-      <div class="gallery-labeled-text" style="padding:80px;">
+    <!-- ── Graduation Library Slideshow ── -->
+    <div class="slideshow-block">
+      <div class="slideshow-info">
         <div class="section-label">Osoul</div>
-        <h3
-          style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown-dark);margin-bottom:16px;">
-          Osoul Restaurant</h3>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">An elegant dining hall characterized by
-          arched architectural elements, cozy booths, and natural textures reflecting local identity.</p>
+        <h3 class="slideshow-sub-title">Graduation Library</h3>
+        <p class="slideshow-desc">A serene and structured library interior, combining geometric wooden shelving with
+          soft ambient lighting for study and research.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
+      </div>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/osoul/library/1.png" alt="Graduation Library View 1"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/library/2.png" alt="Graduation Library View 2" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/library/3.png" alt="Graduation Library View 3" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/library/4.png" alt="Graduation Library View 4" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/library/5.png" alt="Graduation Library View 5" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/library/6.png" alt="Graduation Library Full View" loading="lazy">
+          </div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
     </div>
-    <div class="gallery-split" style="height:60vh;">
-      <img src="assets/osoul/restaurant/2.png" alt="Restaurant View 2">
-      <img src="assets/osoul/restaurant/3.png" alt="Restaurant View 3">
+
+    <!-- ── Osoul Restaurant Slideshow ── -->
+    <div class="slideshow-block slideshow-block--reverse" style="background:var(--cream);">
+      <div class="slideshow-info">
+        <div class="section-label">Osoul</div>
+        <h3 class="slideshow-sub-title">Osoul Restaurant</h3>
+        <p class="slideshow-desc">An elegant dining hall characterized by arched architectural elements, cozy booths,
+          and natural textures reflecting local identity.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
+      </div>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/osoul/restaurant/1.png" alt="Graduation Restaurant View 1"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/restaurant/2.png" alt="Restaurant View 2" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/restaurant/3.png" alt="Restaurant View 3" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/restaurant/4.png" alt="Restaurant View 4" loading="lazy"></div>
+          <div class="slide"><img src="assets/osoul/restaurant/5.png" alt="Restaurant View 5" loading="lazy"></div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
+      </div>
     </div>
-    <div class="gallery-split" style="height:60vh; margin-top: 30px;">
-      <img src="assets/osoul/restaurant/4.png" alt="Restaurant View 4">
-      <img src="assets/osoul/restaurant/5.png" alt="Restaurant View 5">
-    </div>
+
   </section>
 
-  <!-- PROJECT 2: BATHTUB -->
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECT 2: BATHTUB
+  ═══════════════════════════════════════════════════════ -->
   <section id="bathtub" class="project-section" style="background:var(--cream-light);">
-    <div class="gallery-labeled" style="background:var(--cream-light);">
-      <div class="gallery-labeled-img" style="min-height:500px;">
-        <img src="assets/portfolio/bathtub/1.png" alt="Serene Bathtub Render 1">
-      </div>
-      <div class="gallery-labeled-text" style="padding:80px;">
+
+    <!-- ── Bathtub Slideshow ── -->
+    <div class="slideshow-block">
+      <div class="slideshow-info">
         <div class="section-label">Project 02</div>
-        <h2
-          style="font-family:'Cormorant Garamond',serif;font-size:clamp(48px,6vw,80px);font-weight:300;color:var(--brown-dark);line-height:1.05;margin-bottom:16px;">
-          Bathtub</h2>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">A serene bathroom sanctuary blending
-          sculptural form and delicate materiality — rose-tinted tiles meet smooth stone surfaces and soft natural
-          light.</p>
+        <h2 class="slideshow-main-title">Bathtub</h2>
+        <p class="slideshow-desc">A serene bathroom sanctuary blending sculptural form and delicate materiality —
+          rose-tinted tiles meet smooth stone surfaces and soft natural light.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
+      </div>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/portfolio/bathtub/1.png" alt="Serene Bathtub Render 1"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/bathtub/2.png" alt="Serene Bathtub Render 2" loading="lazy">
+          </div>
+          <div class="slide"><img src="assets/portfolio/bathtub/3.png" alt="Serene Bathtub Render 3" loading="lazy">
+          </div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
     </div>
-    <div class="gallery-split" style="height:60vh;">
-      <img src="assets/portfolio/bathtub/2.png" alt="Serene Bathtub Render 2">
-      <img src="assets/portfolio/bathtub/3.png" alt="Serene Bathtub Render 3">
-    </div>
+
   </section>
 
-  <!-- PROJECT 3: LIVING ROOMS -->
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECT 3: LIVING ROOMS
+  ═══════════════════════════════════════════════════════ -->
   <section id="livingrooms" class="project-section">
-    <!-- Section title slide -->
-    <div style="display:grid;grid-template-columns:1fr 2fr;min-height:70vh;background:var(--cream-light);">
-      <div style="overflow: hidden;">
-        <img src="assets/portfolio/livingroom/4.png" alt="Living Room Backdrop"
-          style="width:100%; height:100%; object-fit:cover;">
+
+    <!-- ── Living Rooms Slideshow ── -->
+    <div class="slideshow-block">
+      <div class="slideshow-info">
+        <div class="section-label">Project 03</div>
+        <h2 class="slideshow-main-title">Living Rooms</h2>
+        <p class="slideshow-desc">Warm, layered living spaces that balance comfort and elegance — each room a carefully
+          composed composition of light, texture, and form.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
       </div>
-      <div style="display:flex;align-items:center;justify-content:center;padding:80px;">
-        <h2
-          style="font-family:'Cormorant Garamond',serif;font-size:clamp(48px,6vw,80px);font-weight:300;color:var(--brown-dark);">
-          Living Rooms</h2>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/portfolio/livingroom/4.png" alt="Living Room Render 1"
+              loading="lazy"></div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
     </div>
-    <div class="gallery-one" style="height:70vh;">
-      <img src="assets/portfolio/livingroom/4.png" alt="Living Room Render Detail">
-    </div>
+
   </section>
 
-  <!-- PROJECT 4: SAIB BANK -->
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECT 4: SAIB BANK
+  ═══════════════════════════════════════════════════════ -->
   <section id="saibbank" class="project-section">
+
+    <!-- Intro panel -->
     <div class="saib-intro" style="background:var(--cream-light);">
       <div class="saib-intro-left">
         <div class="section-label">Project 04</div>
@@ -321,69 +349,116 @@
           executive space.</p>
       </div>
       <div class="saib-intro-right" style="min-height:500px;">
-        <img src="assets/portfolio/marketing-saib/1.effectsResult.jpg" alt="Saib Bank Marketing Lobby">
+        <img src="assets/portfolio/marketing-saib/1.effectsResult.jpg" alt="Saib Bank Marketing Lobby" loading="lazy">
       </div>
     </div>
 
-    <!-- CEO Room -->
-    <div class="gallery-labeled" style="background:var(--cream-light);">
-      <div class="gallery-labeled-text">
+    <!-- ── CEO Room Slideshow ── -->
+    <div class="slideshow-block">
+      <div class="slideshow-info">
         <div class="section-label">Saib Bank</div>
-        <h3
-          style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--brown-dark);margin-bottom:12px;">
-          CEO Room</h3>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">Sweeping floor-to-ceiling windows, leaf-motif
-          wall panels in deep burgundy, and warm oak flooring compose an executive suite of quiet authority.</p>
+        <h3 class="slideshow-sub-title">CEO Room</h3>
+        <p class="slideshow-desc">Sweeping floor-to-ceiling windows, leaf-motif wall panels in deep burgundy, and warm
+          oak flooring compose an executive suite of quiet authority.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
       </div>
-      <div class="gallery-labeled-img" style="min-height:450px;">
-        <img src="assets/portfolio/ceo-saib/1.jpg" alt="CEO Room View 1">
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/portfolio/ceo-saib/1.jpg" alt="CEO Room View 1" loading="lazy">
+          </div>
+          <div class="slide"><img src="assets/portfolio/ceo-saib/2.jpg" alt="CEO Room View 2" loading="lazy"></div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
     </div>
 
-    <!-- Meeting Room -->
-    <div class="gallery-labeled" style="background:var(--cream-light);">
-      <div class="gallery-labeled-img" style="min-height:450px;">
-        <img src="assets/portfolio/meeting-saib/1.jpg" alt="Meeting Room View 1">
-      </div>
-      <div class="gallery-labeled-text">
+    <!-- ── Meeting Room Slideshow ── -->
+    <div class="slideshow-block slideshow-block--reverse" style="background:var(--cream);">
+      <div class="slideshow-info">
         <div class="section-label">Saib Bank</div>
-        <h3
-          style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--brown-dark);margin-bottom:12px;">
-          Meeting Room</h3>
-        <p style="font-size:13px;line-height:1.9;color:var(--brown-warm);">A V-shaped statement wall in rich wood frames
-          a marble-topped conference table — commanding, yet inviting collaboration.</p>
+        <h3 class="slideshow-sub-title">Meeting Room</h3>
+        <p class="slideshow-desc">A V-shaped statement wall in rich wood frames a marble-topped conference table —
+          commanding, yet inviting collaboration.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
+      </div>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/portfolio/meeting-saib/1.jpg" alt="Meeting Room View 1"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/meeting-saib/2.jpg" alt="Meeting Room View 2" loading="lazy">
+          </div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
       </div>
     </div>
 
-    <div class="gallery-split" style="height:60vh;">
-      <img src="assets/portfolio/ceo-saib/2.jpg" alt="CEO Room View 2">
-      <img src="assets/portfolio/meeting-saib/2.jpg" alt="Meeting Room View 2">
+    <!-- ── Marketing / Lobby Slideshow ── -->
+    <div class="slideshow-block">
+      <div class="slideshow-info">
+        <div class="section-label">Saib Bank</div>
+        <h3 class="slideshow-sub-title">Marketing &amp; Lobby</h3>
+        <p class="slideshow-desc">Reception and customer-facing areas that project confidence through clean geometry and
+          a restrained material palette.</p>
+        <div class="slideshow-counter"><span class="slide-current">1</span> / <span class="slide-total"></span></div>
+      </div>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/portfolio/marketing-saib/1.effectsResult.jpg"
+              alt="Marketing Saib View 1" loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/marketing-saib/2.effectsResult.jpg" alt="Marketing Saib View 2"
+              loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/marketing-saib/3.effectsResult.jpg" alt="Marketing Saib View 3"
+              loading="lazy"></div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
+      </div>
     </div>
-    <div class="gallery-split" style="height:60vh; margin-top: 30px;">
-      <img src="assets/portfolio/marketing-saib/2.effectsResult.jpg" alt="Marketing Saib View 2">
-      <img src="assets/portfolio/marketing-saib/3.effectsResult.jpg" alt="Marketing Saib View 3">
-    </div>
+
   </section>
 
-  <!-- PROJECT 5: ROOFTOP -->
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECT 5: ROOFTOP
+  ═══════════════════════════════════════════════════════ -->
   <section id="rooftop" class="project-section">
+
     <div style="background:var(--brown-dark);padding:80px;text-align:center;">
       <div class="section-label" style="color:var(--tan);text-align:center;margin-bottom:16px;">Project 05</div>
       <h2
         style="font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,90px);font-weight:300;color:var(--cream-light);line-height:1;">
         Rooftop</h2>
     </div>
-    <div class="rooftop-full" style="height:80vh;">
-      <img src="assets/portfolio/rooftop/6.png" alt="Rooftop View 1">
+
+    <!-- ── Rooftop Slideshow ── -->
+    <div class="slideshow-block slideshow-block--dark">
+      <div class="slideshow-info">
+        <div class="section-label" style="color:var(--tan);">Project 05</div>
+        <h2 class="slideshow-main-title" style="color:var(--cream-light);">Rooftop</h2>
+        <p class="slideshow-desc" style="color:var(--tan-light);opacity:0.85;">An open-air rooftop retreat where
+          contemporary design meets sky — layered pergolas, terracotta planters, and ambient lighting define the
+          atmosphere.</p>
+        <div class="slideshow-counter" style="color:var(--tan);"><span class="slide-current">1</span> / <span
+            class="slide-total"></span></div>
+      </div>
+      <div class="slideshow-stage" data-interval="4000">
+        <div class="slides-track">
+          <div class="slide active"><img src="assets/portfolio/rooftop/6.png" alt="Rooftop View 1" loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/rooftop/7.png" alt="Rooftop View 2" loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/rooftop/8.png" alt="Rooftop View 3" loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/rooftop/9.png" alt="Rooftop View 4" loading="lazy"></div>
+          <div class="slide"><img src="assets/portfolio/rooftop/10.png" alt="Rooftop View 5" loading="lazy"></div>
+        </div>
+        <button class="slide-btn slide-btn-prev" aria-label="Previous">&#8592;</button>
+        <button class="slide-btn slide-btn-next" aria-label="Next">&#8594;</button>
+        <div class="slide-dots"></div>
+      </div>
     </div>
-    <div class="gallery-split" style="height:55vh;">
-      <img src="assets/portfolio/rooftop/7.png" alt="Rooftop View 2">
-      <img src="assets/portfolio/rooftop/8.png" alt="Rooftop View 3">
-    </div>
-    <div class="gallery-split" style="height:55vh; margin-top: 30px;">
-      <img src="assets/portfolio/rooftop/9.png" alt="Rooftop View 4">
-      <img src="assets/portfolio/rooftop/10.png" alt="Rooftop View 5">
-    </div>
+
   </section>
 
   <!-- THANK YOU -->
@@ -452,8 +527,18 @@
     <div class="footer-copy">© 2024 Nada Mahmoud. All rights reserved.</div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <!-- LIGHTBOX OVERLAY -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
 
+  <script src="script.js" defer></script>
 </body>
 
 </html>
